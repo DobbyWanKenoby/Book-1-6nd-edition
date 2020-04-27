@@ -2,7 +2,7 @@
 
 import Foundation
 
-// 26
+// 30
 
 // --- НЕ ВСТАВЛЯТЬ
 
@@ -21,9 +21,10 @@ struct Truck: Vehicle {
 
 // ---
 
-func getCar() -> some Vehicle {
-    return Car(uid: 54)
+func getCar<T: Vehicle>() -> T{
+    return Car(uid: 22) as! T
 }
  
-let myCar = getCar() // Car
-
+let a: Car = getCar()
+ 
+//let b = getCar() // ОШИБКА, Тип не указан

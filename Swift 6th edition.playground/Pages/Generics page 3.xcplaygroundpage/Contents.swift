@@ -35,3 +35,24 @@ struct Stack<T>: Container {
     }
 }
 
+// 21
+
+protocol Vehicle {
+    var uid: Int { get set }
+}
+
+// 22
+
+struct Car: Vehicle {
+    var uid: Int
+}
+
+struct Truck: Vehicle {
+    var uid: Int
+}
+
+// 23
+
+func getCar() -> Vehicle {
+    return Car(uid: 93)
+}

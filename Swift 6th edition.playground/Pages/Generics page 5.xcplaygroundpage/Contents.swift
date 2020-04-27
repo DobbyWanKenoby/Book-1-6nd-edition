@@ -2,7 +2,7 @@
 
 import Foundation
 
-// 25
+// 26
 
 protocol Vehicle {
     var uid: Int { get set }

@@ -1,21 +1,22 @@
-//: [Previous](@previous)
-
 import Foundation
 
+// 24
+
 protocol Vehicle {
+    // связанный тип
     associatedtype Identifier
     var uid: Identifier { get set }
 }
-
+ 
 struct Car: Vehicle {
     var uid: Int
 }
-
+ 
 struct Truck: Vehicle {
     var uid: String
 }
 
-//24
+// 25
 
 func getCar<T: Vehicle>() -> T{
     return Car(uid: 22) as! T
@@ -23,7 +24,15 @@ func getCar<T: Vehicle>() -> T{
  
 let someVehicle: Car = getCar()
 
-let anotherVehicle: Truck = getCar()
+
+
+//func getCar<T: Vehicle>() -> T{
+//    return Car(uid: 22) as! T
+//}
+//
+//let someVehicle: Car = getCar()
+//
+//let anotherVehicle: Truck = getCar()
 
 
 

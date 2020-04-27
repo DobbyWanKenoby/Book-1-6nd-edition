@@ -2,9 +2,10 @@
 
 import Foundation
 
-//
+// 28
 
 // --- НЕ ВСТАВЛЯТЬ
+
 protocol Vehicle {
     associatedtype Identifier
     var uid: Identifier { get set }
@@ -17,6 +18,7 @@ struct Car: Vehicle {
 struct Truck: Vehicle {
     var uid: String
 }
+
 // ---
 
 //
@@ -38,3 +40,16 @@ func getCar() -> some Vehicle {
 }
 
 let b = getCar() // Car
+
+// 29
+
+//func getCar(by number: Int) -> some Vehicle {
+//    switch number {
+//    case 1:
+//        return Car(uid: 55)
+//    default:
+//        return Truck(uid: "0X882S1")
+//    }
+//}
+
+
