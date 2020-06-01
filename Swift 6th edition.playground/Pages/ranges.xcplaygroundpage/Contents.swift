@@ -36,9 +36,11 @@ type(of: oneSideRange) // PartialRangeUpTo<Int>.Type
 var fullRange = 1...10
 type(of: fullRange)
 
-//6
-var infRange = 1...
+//7
+let infRange = 2...
 type(of: infRange) // PartialRangeFrom<Int>.Type
+let collection = [1, 6, 76, 12, 51]
+print( collection[infRange] )
 
 //3а
 var firstElement = 10
