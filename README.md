@@ -1,2 +1,2 @@
-# Swift
-The repo with code from my books about Swift
+# Описание
+Листинги к книге "Swift. Разработка приложений под iOS, iPadOS и macOS (6-е издание)"
