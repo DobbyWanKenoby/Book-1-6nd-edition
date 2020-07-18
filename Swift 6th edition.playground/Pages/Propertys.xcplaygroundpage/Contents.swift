@@ -12,7 +12,7 @@ class AboutMan{
         ( self.firstName, self.secondName ) = ( name, secondName )
     }
     func generateWholeName() -> String{
-        return self.firstName + " " + self.secondName
+        return firstName + " " + secondName
     }
 }
 var Me = AboutMan(name:"Егор", secondName:"Петров")

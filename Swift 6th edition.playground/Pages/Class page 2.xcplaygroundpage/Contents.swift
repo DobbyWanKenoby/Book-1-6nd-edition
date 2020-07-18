@@ -18,20 +18,20 @@ class Chessman {
         Character){
         self.type = type
         self.color = color
-        self.figureSymbol = figure
+        figureSymbol = figure
     }
     init(type: ChessmanType, color: ChessmanColor, figure:
         Character, coordinates: (String, Int)){
         self.type = type
         self.color = color
-        self.figureSymbol = figure
-        self.setCoordinates(char: coordinates.0, num:coordinates.1)
+        figureSymbol = figure
+        setCoordinates(char: coordinates.0, num:coordinates.1)
     }
     func setCoordinates(char c:String, num n: Int){
-        self.coordinates = (c, n)
+        coordinates = (c, n)
     }
     func kill(){
-        self.coordinates = nil
+        coordinates = nil
     }
 }
 

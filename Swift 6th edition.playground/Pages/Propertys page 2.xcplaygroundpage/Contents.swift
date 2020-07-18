@@ -25,10 +25,10 @@ struct Circle{
     var radius: Float
     var perimeter: Float {
         get{
-            return 2.0*3.14*self.radius
+            return 2.0 * 3.14 * radius
         }
         set(newPerimeter){
-            self.radius = newPerimeter / (2*3.14)
+            radius = newPerimeter / (2*3.14)
         }
     }
 }
@@ -47,18 +47,18 @@ struct Circle2{
     // свойство для листинга 7
     var radius: Float {
         willSet (newValueOfRadius) {
-            print("Вместо значения \(self.radius) устанавливается значение \(newValueOfRadius)")
+            print("Вместо значения \(radius) устанавливается значение \(newValueOfRadius)")
         }
         didSet (oldValueOfRadius) {
-            print("Вместо значения \(oldValueOfRadius) установлено значение \(self.radius)")
+            print("Вместо значения \(oldValueOfRadius) установлено значение \(radius)")
         }
     }
     var perimeter: Float {
         get{
-            return 2.0*3.14*self.radius
+            return 2.0 * 3.14 * radius
         }
         set{
-            self.radius = newValue / (2*3.14)
+            radius = newValue / (2*3.14)
         }
     }
 }

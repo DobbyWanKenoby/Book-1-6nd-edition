@@ -17,7 +17,7 @@ class Chessman2 {
     init(type: String, color: String, figure: Character){
         self.type = type
         self.color = color
-        self.figureSymbol = figure
+        figureSymbol = figure
     }
 }
 // создаем экземпляр фигуры
@@ -42,23 +42,23 @@ class Chessman {
     init(type: ChessmanType, color: ChessmanColor, figure:Character){
         self.type = type
         self.color = color
-        self.figureSymbol = figure
+        figureSymbol = figure
     }
     //инициализатор из листинга 4
     init(type: ChessmanType, color: ChessmanColor, figure: Character, coordinates: (String, Int)){
         self.type = type
         self.color = color
-        self.figureSymbol = figure
-        self.setCoordinates(char: coordinates.0, num: coordinates.1)
+        figureSymbol = figure
+        setCoordinates(char: coordinates.0, num: coordinates.1)
     }
     // методы из листинга 3
     // метод установки координат
     func setCoordinates(char c:String, num n: Int){
-        self.coordinates = (c, n)
+        coordinates = (c, n)
     }
     // метод, убивающий фигуру
     func kill(){
-        self.coordinates = nil
+        coordinates = nil
     }
 }
 var kingWhite = Chessman(type: .king, color: .white, figure: "\u{2654}")

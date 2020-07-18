@@ -49,11 +49,11 @@ struct PlayerInChess {
     }
     //метод из листинга 9
     func description(){
-        print("Игрок \(self.name) имеет \(self.wins) побед")
+        print("Игрок \(name) имеет \(wins) побед")
     }
     //метод из листинга 10
     mutating func win( count: UInt = 1 ){
-        self.wins += count
+        wins += count
     }
 }
 var helga = PlayerInChess(name: "Ольга")

@@ -1,7 +1,7 @@
-import Foundation
+import SwiftUI
 
-struct Notice {
-    var title: String = ""
+struct ContentView: View {
+    var body: some View {
+        Text("Hello World")
+    }
 }
-
-

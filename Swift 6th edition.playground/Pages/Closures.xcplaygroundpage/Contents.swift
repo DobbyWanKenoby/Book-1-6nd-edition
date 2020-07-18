@@ -96,6 +96,24 @@ var successBanknots = handle(wallet: wallet)
     { Array(arrayLiteral: 100,500).contains($0) }
 successBanknots //[100, 100, 100, 500, 100]
 
+// 10
+func networkQuery(url: String, success: (String) -> (), error: (Int) -> ()) {
+    // код запроса на сервер
+}
+
+//10
+
+// классический вариант
+networkQuery(url: "https://weather.com", success: { data in }, error: {errorCode in })
+
+// новый вариант
+networkQuery(url: "https://weather.com") { data in
+    // ...
+} error: { errorCode in
+    // ...
+}
+
+
 
 //10
 let closure: () -> () = {

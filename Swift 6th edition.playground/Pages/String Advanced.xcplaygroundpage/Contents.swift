@@ -52,7 +52,6 @@ name[lastChar] //"c"
 var fourCharIndex = name.index(name.startIndex, offsetBy:3)
 name[fourCharIndex] //"s"
 
-
 //15
 name.count //7
 name.unicodeScalars.count //8

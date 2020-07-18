@@ -73,3 +73,32 @@ do {
 }
 // выводит "Недостаточно средств. Пожалуйста, внесите еще 2 монет(ы)."
 
+// 10
+//struct NetworkError: Error {}
+//
+//// 11
+//do {
+//    // принудительно вызываем исключительную ситуацию
+//    throw NetworkError()
+//} catch is NetworkError  {
+//    print("it is network error")
+//} catch {
+//   // ...
+//}
+
+// 12
+struct NetworkError: Error {
+    var code: Int
+    func description() -> String {
+        return "it is network error with code \(code)"
+    }
+}
+
+do {
+    // принудительно вызываем исключительную ситуацию
+    throw NetworkError(code: 404)
+} catch let error as NetworkError  {
+    print(error.description())
+} catch {
+   // ...
+}

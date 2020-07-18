@@ -87,7 +87,7 @@ enum Smile: String {
         return self
     }
     func descriptionRawValue() -> String{
-        return self.rawValue
+        return rawValue
     }
 }
 
@@ -154,9 +154,9 @@ enum ArithmeticExpression2 {
         case let .number( value ):
             return value
         case let .addition( valueLeft, valueRight ):
-            return self.evaluate( valueLeft )+self.evaluate( valueRight )
+            return evaluate( valueLeft ) + evaluate( valueRight )
         case .subtraction( let valueLeft, let valueRight ):
-            return self.evaluate( valueLeft )-self.evaluate( valueRight )
+            return evaluate( valueLeft )-evaluate( valueRight )
         }
     }
 }
