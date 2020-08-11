@@ -1,7 +1,4 @@
-import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        Text("Hello World")
-    }
+struct ChessPlayer {
+    var name: String
+    var victories: UInt = 0
 }
