@@ -2,13 +2,12 @@
 //  AppDelegate.swift
 //  MyName
 //
-//  Created by Василий Усов on 06.04.2020.
-//  Copyright © 2020 Василий Усов. All rights reserved.
+//  Created by Василий Усов on 12.08.2020.
 //
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
